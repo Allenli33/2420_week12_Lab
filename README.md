@@ -55,6 +55,7 @@ sudo apt install nginx
 
 2. Create a simple, but complete HTML document to serve. Your file should be named **index.html**
    ![](image/write-html.png)
+   
    ![](image/html-content.png)
 
 3. Make a server block file use command below
@@ -69,7 +70,7 @@ and then save the content
 
 ![](image/block-content.png)
 
-4. Upload your files to your server and move them to the appropriate directories.
+## 3. Upload your files to your server and move them to the appropriate directories.
    I used sftp to transfer all my files:
 
 i: To connect to remote server, run command:
@@ -87,6 +88,7 @@ put -r folder-name
 ```
 
 ![](image/sftp2.png)
+
 ![](image/transfer.png)
 
 Now connect to your web-one server
@@ -100,6 +102,7 @@ Now connect to your web-one server
 iii: Move files to appropriate directories
 
 ![](image/cp.png)
+
 ![](image/cp2.png)
 
 Check
@@ -126,7 +129,7 @@ sudo ln -s /etc/nginx/sites-available/your_ip /etc/nginx/sites-enabled/
 
 ![](image/checkweb.png)
 
-## 3. Setup a firewall using DO Cloud Firewall Allow incoming HTTP and SSH connections.
+## 4. Setup a firewall using DO Cloud Firewall Allow incoming HTTP and SSH connections.
 
 1. click create button on the top in DO like the graph below and clik Cloud Firewalls
 
