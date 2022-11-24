@@ -117,3 +117,32 @@ sudo ln -s /etc/nginx/sites-available/your_ip /etc/nginx/sites-enabled/
 **test your nginx configuration**
 
 ![](image/test.png)
+
+**Start or restart your service**
+
+![](image/restart.png)
+
+**Check to see if your document is being served by visiting your servers ip address**
+
+![](image/checkweb.png)
+
+## 3. Setup a firewall using DO Cloud Firewall Allow incoming HTTP and SSH connections.
+
+1. click create button on the top in DO like the graph below and clik Cloud Firewalls
+
+![](image/firewall1.png)
+
+2. For the type make sure you have both SSH and HTTP chosen
+
+![](image/firewall2.png)
+
+3. Apply to Droplets
+
+![](image/firewall3.png)
+
+4. Check if the firewall made successfully
+
+![](image/firewall4.png)
+
+**Note:** After setting up your firewall ensure that you can still connect to your server via ssh and HTTP. You should still be able to connect to your server via ssh and visit the ip address in the browser.
+
